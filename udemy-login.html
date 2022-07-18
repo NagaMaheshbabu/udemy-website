@@ -212,17 +212,25 @@
                 <span class="material-symbols-outlined" id="lock">
                     lock
                 </span>
-                <input type="password" placeholder="Enter Password" required>
+                <input type="password" placeholder="Enter Password" required id='psw'>
+            </div>
+            <div id="message">
+
+                <p id="letter" class="invalid">A <b>lowercase </b>letter</label>
+                <p id="capital" class="invalid">A <b>Uppercase </b>letter</p>
+                <p id="number" class="invalid">A <b>number </b></p>
+                <p id="length" class="invalid">Minimum<b> 8 Characters</b></p>
+
             </div>
             <div>
                 <input type="button" style="margin-left: 28px;" id="log" value="Log In">
             </div>
             <div>
-                <span>Or</span>
+                <span id="or">Or</span>
                 <span><a href="#" class="forgot-pass">Forgot Password</a></span>
             </div>
         </div>
-        <div>
+        <div id="signup">
             <span>Don't have an account?</span>
             <span><a href="#">Sign up</a></span>
         </div>
