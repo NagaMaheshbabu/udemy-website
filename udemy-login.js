@@ -141,9 +141,6 @@ const a = head.addEventListener('click', () => {
 
 
 
-
-
-
     const div1 = document.createElement('div');
     div1.className = 'inner';
     div.append(div1);
@@ -174,3 +171,66 @@ const b = head.addEventListener('click', () => {
     })
 })
 
+
+let inputText = document.getElementById('psw');
+let letter = document.getElementById('letter');
+let capital = document.getElementById('capital');
+let number = document.getElementById('number');
+let length = document.getElementById('length');
+
+inputText.onfocus = function(){
+    document.getElementById('message').style.display = 'block';
+}
+inputText.onblur = function()
+{
+    document.getElementById('message').style.display = 'none';
+}
+
+//whenever we type text in the input
+inputText.onkeyup =function(){
+
+    let lowercaseletters = /[a-z]/g;
+
+    if(inputText.value.match(lowercaseletters))
+    {
+        letter.classList.add('valid');
+        letter.classList.remove('invalid');
+    }
+    else{
+        letter.classList.add('invalid');
+        letter.classList.remove('valid');
+    }
+
+    let uppercaseletters = /[A-Z]/g
+    if(inputText.value.match(uppercaseletters))
+    {
+        capital.classList.add('valid');
+        capital.classList.remove('invalid')
+    }
+    else{
+        capital.classList.add('invalid');
+        capital.classList.remove('valid');
+    }
+
+    let numbers = /[0-9]/g
+    if(inputText.value.match(numbers))
+    {
+        number.classList.add('valid');
+        number.classList.remove('invalid');
+    }
+    else{
+        number.classList.add('invalid');
+        number.classList.remove('valid');
+    }
+
+    if(inputText.value.length >=8)
+    {
+        length.classList.add('valid');
+        length.classList.remove('invalid');
+    }
+    else{
+        length.classList.add('invalid');
+        length.classList.remove('valid');
+    }
+
+}
