@@ -4,7 +4,9 @@
     padding: 0%;
 }
 
-
+#message{
+    display:none
+}
 
 li {
     list-style: none;
@@ -342,6 +344,8 @@ li {
 
     #org {
         margin-top: 20px;
+        position:relative;
+        top:10px;
 
     }
 
@@ -1056,14 +1060,10 @@ li {
         transform: rotate(90deg);
         color: blue;
     }
- #message {
-        height: 80px;
-        display: block;
-        align-items: center;
-        position: relative;
-        top: -27px;
-        line-height: 30px;
+  #message {
+        font-size: 13px;
         font-family: 'poppins';
+        margin-top: -20px;
     }
 
     #message p {
