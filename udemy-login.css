@@ -410,91 +410,19 @@ li {
         color: blue;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .invalid {
+        color: red;
+    }
+
+    .valid {
+        color: green;
+    }
+
+    #message {
+        font-size: 13px;
+        font-family: 'poppins';
+        margin-top: -20px;
+    }
 
 }
 
@@ -1128,7 +1056,28 @@ li {
         transform: rotate(90deg);
         color: blue;
     }
+ #message {
+        height: 80px;
+        display: block;
+        align-items: center;
+        position: relative;
+        top: -27px;
+        line-height: 30px;
+        font-family: 'poppins';
+    }
 
+    #message p {
+        font-size: 12px;
+      
+    }
+
+    .invalid {
+        color: red;
+    }
+
+    .valid {
+        color: green;
+    }
 
 
 
